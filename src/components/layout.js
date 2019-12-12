@@ -7,6 +7,7 @@
 
 import './bootstrap.min.css'
 
+import Navbar from './global/Navbar'
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -14,7 +15,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
 
-const Layout = ({ children }) => <>{children}</>
+const Layout = ({ children }) => <><Navbar />{children}</>
 
 
 Layout.propTypes = {
